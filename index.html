@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Document Title Here</title>
+    <title>Brainmap</title>
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/png">
@@ -17,23 +17,11 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- Fontawesome css -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-
 </head>
 
 <body>
-
-    <div class="overlay"></div>
-
-
     <div class="head-part-area">
         <div class="container cs-padding">
             <div class="head-part-content">
@@ -55,7 +43,9 @@
                     that you often remain unaware that the current experience is tied to something that may have
                     happened decades ago, because the parts of the brain that orient you to time and place have
                     disconnected. In short your brain doesn’t have a map or a compass during these events of
-                    re-experiencing. The I-brainmap™ is a bottom-up-inside-out model. It starts at the bottom by firstly
+                    re-experiencing. <br> The I-brainmap™ is a bottom-up-inside-out model. It starts at the bottom
+                    by
+                    firstly
                     describing the
                     common ways brain overwhelm is experienced, from the inside. Next it explains, using relevant
                     brain-science, how and why the brain functions in this way. The I-brainmap™ then outlines how to
@@ -68,7 +58,8 @@
     <div class="video-area">
         <div class="container cs-padding">
             <div class="video-field">
-                <img src="assets/img/v-bg.png" class="img-fluid w-100" alt="">
+                <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" width="100%" height="630"
+                    frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
             </div>
             <h2 class="primary-title">For more videos, <a href="#" class="d-inline-block text-blue">Click Here!</a></h2>
         </div>
@@ -151,6 +142,8 @@
                     <img src="assets/img/sec-2.png" alt="" class="img-fluid w-100">
                 </div>
                 <div class="sec-img"><img src="assets/img/sec-3.png" alt="" class="img-fluid w-100"></div>
+            </div>
+            <div class="twin-img-g-wrapper type-2 mb-5">
                 <div class="sec-img"><img src="assets/img/sec-4.png" alt="" class="img-fluid w-100"></div>
                 <div class="sec-img"><img src="assets/img/sec-5.png" alt="" class="img-fluid w-100"></div>
             </div>
@@ -168,7 +161,7 @@
 
     <div class="ft-up-area">
         <div class="container cs-padding">
-            <div class="row">
+            <div class="row ft-up">
                 <div class="col-md-4">
                     <a href="#" class="d-inline-block"><img src="assets/img/l-1.png" class="img-fluid" alt=""></a>
                 </div>
@@ -189,8 +182,24 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- Plugins Js -->
+    <script src="assets/js/player.js"></script>
+
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        const player = new Vimeo.Player(iframe);
+
+        player.on('play', function () {
+            console.log('played the video!');
+        });
+
+        player.getVideoTitle().then(function (title) {
+            console.log('title:', title);
+        });
+    </script>
 </body>
 
 </html>
