@@ -2,11 +2,6 @@
 /* Custom Fonts Linking  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-@font-face {
-  font-family: helveticaNeue;
-  src: url(../fonts/HelveticaNeue.ttf);
-}
-
 body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
