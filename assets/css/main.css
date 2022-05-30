@@ -166,6 +166,16 @@ ol {
   margin-bottom: 40px;
 }
 
+.absolute-base .twin {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+}
+
+.absolute-base .first {
+  max-width: 340px;
+  margin-bottom: 30px;
+}
+
 /* choose-area css end */
 
 /* video-area css start */
@@ -278,5 +288,9 @@ ol {
     padding-bottom: 20px;
   }
 
+  .absolute-base .first {
+    max-width: 58vw;
+    margin-bottom: 20px;
+  }
 
 }
